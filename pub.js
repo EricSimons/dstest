@@ -1,8 +1,10 @@
 (function() {
   var modifyLink = function() {
-    var editIcon = document.getElementsByClassName(
-      "iconEdit_node_modules-@docusaurus-theme-classic-lib-next-theme-IconEdit-"
-    );
+    __modifyLink("iconEdit_node_modules-@docusaurus-theme-classic-lib-next-theme-IconEdit-");
+    __modifyLink("iconEdit_2LL7");
+  }
+  var __modifyLink = function(cssClass) {
+    var editIcon = document.getElementsByClassName(cssClass);
 
     if (editIcon[0]) {
       var editLink = editIcon[0].parentElement;
